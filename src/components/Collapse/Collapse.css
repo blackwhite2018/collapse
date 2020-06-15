@@ -1,0 +1,38 @@
+.collapse {
+    width: 600px;
+    border: 1px solid #000;
+    position: relative;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.btn {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-collapse {
+    border-bottom: 1px dashed #000;
+}
+  
+.collapse__body {
+    overflow: hidden;
+    position: absolute;
+    transition: all .4s;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(-20%);
+    pointer-events: none;
+}
+  
+.collapse__body.collapse__body--show {
+    width: 100%;
+    pointer-events: auto;
+    transform: translateY(0);
+    position: relative;
+    margin: 0;
+    opacity: 1;
+    white-space: normal;
+}
